@@ -2,6 +2,8 @@
 
 東横INN の予約内容詳細ページの情報から iCalender 形式のファイルを生成するブックマークレットです。予約した東横INN の予定をカレンダーに登録したいときに便利です。
 
+![概要](Documents/Resources/概要.png)
+
 ## 動作環境
 
 - macOS High Sierra 10.13.1
