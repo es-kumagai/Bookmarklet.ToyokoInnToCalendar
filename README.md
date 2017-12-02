@@ -1,13 +1,5 @@
 # Bookmarklet.ToyokoInnToCalendar
 
-<style>
-img {
-border: 2pt solid #EEF;
-padding: 4pt;
-max-width: 500pt;
-}
-</style>
-
 東横INN の予約内容詳細ページの情報から iCalender 形式のファイルを生成するブックマークレットです。予約した東横INN の予定をカレンダーに登録したいときに便利です。
 
 ## 動作環境
@@ -24,7 +16,7 @@ max-width: 500pt;
 
 迷うようなら [東横INN のホームページ](https://www.toyoko-inn.com) をブックマーク登録します。このとき、ブックマーク名を `東横INN の予約をカレンダーに登録` など、ブックマークレットであることが分かりやすい名前に変えます。
 
-<img src="Documents/Resources/ブックマークレットに登録.png"/>
+<img style="border: 2pt solid #EEF; padding: 4pt; margin: 22pt 4pt; max-width: 500pt;" src="Documents/Resources/ブックマークレットに登録.png"/>
 
 ブックマークを登録したら、ブックマークを編集 (`⌥⌘B`) します。
 そして次のコードコピーして、先ほど登録したブックマークの `アドレス` のところにペーストします。
@@ -34,7 +26,7 @@ max-width: 500pt;
 javascript%3A%28function%28%29%20%7B%0A%09const%20e%20%3D%20document.createElement%28%27script%27%29%3B%0A%09const%20url%20%3D%20%27https%3A//raw.githubusercontent.com/es-kumagai/Bookmarklet.ToyokoInnToCalendar/develop/Bookmarklet.ToyokoInnToCalendar.js%27+%27%3Ft%3D%27+%28new%20Date%28%29%29.getTime%28%29%3B%0A%09e.charset%3D%27utf-8%27%3B%0A%09e.src%3Durl%3B%0A%09document.body.appendChild%28e%29%3B%0A%7D%29%28%29%0A
 ```
 
-<img src="Documents/Resources/ブックマークレットを編集.png"/>
+<img style="border: 2pt solid #EEF; padding: 4pt; margin: 22pt 4pt; max-width: 500pt;" src="Documents/Resources/ブックマークレットを編集.png"/>
 
 ## 使い方
 
