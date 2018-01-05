@@ -108,7 +108,6 @@
 			
 			function getTargetHotelColumnNodeByHotelColumnNodes(hotelColumnNodes, name) {
 				
-// 				for (let i = 228; i != 232; ++i) {
 				for (let i = 0; i != hotelColumnNodes.length; ++i) {
 					
 					const hotelColumnNode = hotelColumnNodes[i];
