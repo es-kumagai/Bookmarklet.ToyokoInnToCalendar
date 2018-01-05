@@ -217,6 +217,14 @@
 					accommodationPeriod = dateAndPeriod['period'];
 					break;
 				
+				case 'ご宿泊日':
+					accommodationDate = getInnerTextByFirstElementOfTagName(columnNode, 'td');
+					break;
+				
+				case '泊数':
+					accommodationPeriod = getInnerTextByFirstElementOfTagName(columnNode, 'td');
+					break;
+				
 				case 'ご予約者名':
 					break;
 					
