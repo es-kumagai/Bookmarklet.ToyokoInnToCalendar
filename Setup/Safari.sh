@@ -59,7 +59,7 @@ else
 
 	BRANCH="master"
 	TITLE_SUFFIX=""
-	URL_PREFIX="cdn."
+	URL_PREFIX="" # If add prefix "cdn." to url, the bookmarklet script will not be updated for a long time."
 
 fi
 
