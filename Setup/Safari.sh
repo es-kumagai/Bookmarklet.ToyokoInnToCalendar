@@ -39,15 +39,28 @@ END_OF_ITEM
 
 # Applying branch to bookmarklet url.
 
-if [ "$1" != "" ]
+if [ "$1" == "dropbox" ]
 then
+
+	BRANCH=""
+	TITLE_SUFFIX=" (dropbox)"
+	URL_PREFIX=""
+
+	BOOKMARKLET_SCRIPT_URL=$(echo "$2" | sed -e "s#://www\.#://dl.#" | sed -e "s/\?dl=0\$//")
+	
+elif [ "$1" != "" ]
+then
+
 	BRANCH="$1"
 	TITLE_SUFFIX=" (${BRANCH})"
 	URL_PREFIX=""
+
 else
+
 	BRANCH="master"
 	TITLE_SUFFIX=""
 	URL_PREFIX="cdn."
+
 fi
 
 BOOKMARKLET_SCRIPT_URL=$(echo "${BOOKMARKLET_SCRIPT_URL}" | sed -e "s#/#\\\\/#g")
